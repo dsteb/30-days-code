@@ -11,13 +11,9 @@ public class Solution {
    public static void main(String[] args) {
       try (Scanner scan = new Scanner(System.in)) {
         int n = scan.nextInt();
-        String ans = "";
 
-        if (n % 2 == 1){
-           ans = "Weird";
-        } else {
-           // Complete the code
-        }
+        boolean isWeird = n % 2 == 1 || (n >= 6 && n <= 20);
+        String ans = isWeird ? "Weird" : "Not Weird";
         System.out.println(ans);
       }
    }
